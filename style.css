@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 :root {
-    --yellow: #f9ca24;
+    --yellow: #e6005c;
 }
 
 * {
@@ -11,7 +11,6 @@
     text-decoration: none;
     outline: none;
     border: none;
-    text-transform: capitalize;
     transition: all 0.2s linear;
 }
 
@@ -64,6 +63,25 @@ section {
 }
 
 .btn:hover {
+    background: var(--yellow);
+}
+
+.btn1 {
+    padding: 1rem 3rem;
+    background: #f9ca24;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    border-radius: 3rem;
+}
+
+.btn1 i {
+    padding: 0 0.5rem;
+    font-size: 1.8rem;
+}
+
+.btn1:hover {
     background: var(--yellow);
 }
 
@@ -279,7 +297,13 @@ header .navbar ul li a:hover {
     background: var(--yellow);
 }
 
-.portfolio .box-container {
+.skills p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 4rem 0;
+}
+
+.projects .box-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -287,7 +311,7 @@ header .navbar ul li a:hover {
     padding: 2rem 0;
 }
 
-.portfolio .box-container .box {
+.projects .box-container .box {
     height: 20rem;
     width: 26rem;
     border-radius: 1rem;
@@ -296,13 +320,13 @@ header .navbar ul li a:hover {
     cursor: pointer;
 }
 
-.portfolio .box-container .box img {
+.projects .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolio .box-container .box:hover img {
+.projects .box-container .box:hover img {
     transform: scale(1.2);
 }
 
@@ -364,6 +388,10 @@ header .navbar ul li a:hover {
 .contact .row .content .info h3 i {
     padding-right: 1rem;
     color: var(--yellow);
+}
+
+.contact a {
+    color: #fff;
 }
 
 .top {
