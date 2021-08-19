@@ -68,7 +68,7 @@ section {
 
 .btn1 {
     padding: 1rem 3rem;
-    background: #f9ca24;
+    background: #e6005c;
     color: #fff;
     cursor: pointer;
     margin-top: 1rem;
@@ -297,10 +297,37 @@ header .navbar ul li a:hover {
     background: var(--yellow);
 }
 
-.skills p {
+.container {
+    display: grid;
+    grid-gap: 1rem;
+    flex-direction: row;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+
+.skill-box {
+    padding: 1rem;
+    color: #ddd;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.skill-box img {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.skill-icon {
+    width: 50px;
+}
+
+.skill-box h3 {
     font-size: 2rem;
     color: #eee;
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 .projects .box-container {
@@ -330,6 +357,27 @@ header .navbar ul li a:hover {
     transform: scale(1.2);
 }
 
+.project_title {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.box-wrap h1 {
+    font-size: 2rem;
+}
+
+.sub {
+    color: white;
+    padding: 1.2rem;
+    width: 26rem;
+    margin: 9 rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    height: 12rem;
+    background-color: #e6005c;
+}
+
 .contact .row {
     display: flex;
     align-items: center;
@@ -341,6 +389,7 @@ header .navbar ul li a:hover {
     flex: 1 1 30rem;
     padding: 4rem;
     padding-bottom: 0;
+    background-color: #111;
 }
 
 .contact .row form {
@@ -411,6 +460,10 @@ header .navbar ul li a:hover {
     }
     .home {
         padding: 1rem 4rem;
+    }
+    .box-wrap {
+        padding: 2rem;
+        border-bottom: 0.1rem solid #fff;
     }
 }
 
