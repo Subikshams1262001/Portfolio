@@ -352,6 +352,7 @@ header .navbar ul li a:hover {
 .box-wrap {
     border: 1px solid white;
     background: #e6005c;
+    border-radius: 5px;
 }
 
 .contact .row {
@@ -484,9 +485,6 @@ footer {
         width: 100%;
     }
     .education .box-container .box {
-        width: 100%;
-    }
-    .projects .box-container .box {
         width: 100%;
     }
     .contact .row form {
