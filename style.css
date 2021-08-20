@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap");
 :root {
-    --yellow: #e6005c;
+    --pink: #e6005c;
 }
 
 * {
@@ -15,7 +15,7 @@
 }
 
 *::selection {
-    background: var(--yellow);
+    background: var(--pink);
     color: #333;
 }
 
@@ -33,7 +33,7 @@ html::-webkit-scrollbar-track {
 }
 
 html::-webkit-scrollbar-thumb {
-    background: var(--yellow);
+    background: var(--pink);
 }
 
 body {
@@ -63,7 +63,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--yellow);
+    background: var(--pink);
 }
 
 .btn1 {
@@ -82,7 +82,7 @@ section {
 }
 
 .btn1:hover {
-    background: var(--yellow);
+    background: var(--pink);
 }
 
 .heading {
@@ -95,7 +95,7 @@ section {
 }
 
 .heading span {
-    color: var(--yellow);
+    color: var(--pink);
 }
 
 header {
@@ -119,7 +119,7 @@ header .user img {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border: 0.7rem solid var(--yellow);
+    border: 0.7rem solid var(--pink);
 }
 
 header .user .name {
@@ -149,10 +149,11 @@ header .navbar ul li a {
     color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
+    text-decoration: none;
 }
 
 header .navbar ul li a:hover {
-    background: var(--yellow);
+    background: var(--pink);
 }
 
 #menu {
@@ -186,7 +187,7 @@ header .navbar ul li a:hover {
 }
 
 .home h1 span {
-    color: var(--yellow);
+    color: var(--pink);
 }
 
 .home p {
@@ -211,7 +212,7 @@ header .navbar ul li a:hover {
 
 .about .row .info h3 {
     font-size: 2rem;
-    color: var(--yellow);
+    color: var(--pink);
     padding: 1rem 0;
     font-weight: normal;
 }
@@ -238,7 +239,7 @@ header .navbar ul li a:hover {
 
 .about .row .counter .box span {
     font-size: 4rem;
-    color: var(--yellow);
+    color: var(--pink);
 }
 
 .about .row .counter .box h3 {
@@ -294,10 +295,29 @@ header .navbar ul li a:hover {
     text-align: center;
     font-size: 2rem;
     color: #fff;
-    background: var(--yellow);
+    background: var(--pink);
 }
 
-.container {
+.progress {
+    margin-left: 2rem;
+    height: 2rem;
+    width: 60rem;
+}
+
+.progress-bar {
+    font-size: 2rem;
+    background-color: #e6005c;
+}
+
+.skill_title {
+    margin-left: 1rem;
+    color: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+
+/* .container {
     display: grid;
     grid-gap: 1rem;
     flex-direction: row;
@@ -310,6 +330,8 @@ header .navbar ul li a:hover {
     color: #ddd;
     cursor: pointer;
     margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
 }
 
 .skill-box img {
@@ -328,12 +350,9 @@ header .navbar ul li a:hover {
     font-size: 2rem;
     color: #eee;
     padding: 2rem 0;
-}
+} */
 
 .projects .box-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     padding: 2rem 0;
 }
@@ -436,11 +455,12 @@ header .navbar ul li a:hover {
 
 .contact .row .content .info h3 i {
     padding-right: 1rem;
-    color: var(--yellow);
+    color: var(--pink);
 }
 
 .contact a {
     color: #fff;
+    text-decoration: none;
 }
 
 .top {
@@ -449,6 +469,10 @@ header .navbar ul li a:hover {
     right: 2rem;
     z-index: 100;
     display: none;
+}
+
+.copy {
+    text-align: center;
 }
 
 
@@ -501,10 +525,24 @@ header .navbar ul li a:hover {
     .education .box-container .box {
         width: 100%;
     }
-    .portfolio .box-container .box {
+    .projects .box-container .box {
         width: 100%;
     }
     .contact .row form {
         margin: 3rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .progress {
+        width: 45rem;
+        margin-left: 0.5rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .progress {
+        width: 38rem;
+        margin-left: 0rem;
     }
 }
