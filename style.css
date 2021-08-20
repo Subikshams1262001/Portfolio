@@ -322,7 +322,7 @@ header .navbar ul li a:hover {
 }
 
 .projects .box-container .box {
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     margin: 2rem;
     cursor: pointer;
 }
@@ -502,6 +502,13 @@ footer {
 @media (max-width: 380px) {
     .progress {
         width: 38rem;
-        margin-left: 0.7rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .progress {
+        width: 32rem;
+        margin-left: 1.5rem;
     }
 }
