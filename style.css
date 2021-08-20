@@ -504,6 +504,6 @@ footer {
 @media (max-width: 380px) {
     .progress {
         width: 38rem;
-        margin-left: 0rem;
+        margin-left: 0.7rem;
     }
 }
