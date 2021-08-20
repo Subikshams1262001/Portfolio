@@ -475,6 +475,10 @@ header .navbar ul li a:hover {
     text-align: center;
 }
 
+footer {
+    height: 50px;
+}
+
 
 /* media queries  */
 
