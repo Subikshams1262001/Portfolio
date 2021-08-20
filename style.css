@@ -354,16 +354,12 @@ header .navbar ul li a:hover {
 } */
 
 .projects .box-container {
-    flex-wrap: wrap;
     padding: 2rem 0;
 }
 
 .projects .box-container .box {
-    height: 20rem;
-    width: 26rem;
     border-radius: 1rem;
     margin: 2rem;
-    overflow: hidden;
     cursor: pointer;
 }
 
@@ -379,23 +375,19 @@ header .navbar ul li a:hover {
 
 .project_title {
     color: white;
-    text-align: center;
     padding: 1rem;
+    font-size: 27px;
+    font-weight: 500;
 }
 
-.box-wrap h1 {
-    font-size: 2rem;
-}
-
-.sub {
+.project_text {
     color: white;
-    padding: 1.2rem;
-    width: 26rem;
-    margin: 9 rem;
-    margin-left: 2rem;
-    border-radius: 1rem;
-    height: 12rem;
-    background-color: #e6005c;
+    font-size: 1.5rem;
+}
+
+.box-wrap {
+    border: 1px solid white;
+    background: #e6005c;
 }
 
 .contact .row {
